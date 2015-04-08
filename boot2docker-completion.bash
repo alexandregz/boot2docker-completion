@@ -39,7 +39,7 @@ _boot2docker() {
 		version
 	)
 
-        local subcommands=(
+        local options=(
                 --basevmdk
                 --clobber
                 --dhcp
@@ -80,7 +80,7 @@ _boot2docker() {
 
         case "$cur" in
                 -*)
-                        COMPREPLY=( $( compgen -W "${subcommands[*]}" -- "$cur" ) )
+                        COMPREPLY=( $( compgen -W "${options[*]}" -- "$cur" ) )
                         ;;
 
                 *)
