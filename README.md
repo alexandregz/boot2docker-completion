@@ -22,3 +22,14 @@ alex@vostok:/Volumes/HD/dev/boot2docker-completion(master)$ ln -s $(pwd)/boot2do
 ```
 
 - Reload your shell: `source ~/.bash_profile`
+
+
+Usage with Homebrew-completions
+-------------------------------
+
+- Tap repo and just install:
+
+```bash
+$ brew tap homebrew/completions
+$ brew install boot2docker-completion
+```
